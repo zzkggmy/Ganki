@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:iconTint="@color/white"
+            android:id="@+id/menu_tree"
+            android:title="@string/tree"
+            android:icon="@drawable/ic_subject_light_blue_600_24dp"/>
+        <item
+            android:iconTint="@color/white"
+            android:id="@+id/menu_project"
+            android:title="@string/project"
+            android:icon="@drawable/ic_all_inclusive_red_700_24dp"/>
+        <item
+            android:id="@+id/menu_collection"
+            android:title="@string/collection"
+            android:icon="@drawable/ic_collections_indigo_500_24dp"/>
+    </group>
+
+    <group android:id="@+id/group2">
+            <item android:id="@+id/menu_setting"
+            android:title="@string/setting"
+            android:icon="@drawable/ic_settings_blue_grey_900_24dp"/>
+
+        <item
+            android:id="@+id/menu_about"
+            android:title="@string/about"
+            android:icon="@drawable/ic_local_offer_cyan_800_24dp"/>
+    </group>
+</menu>
