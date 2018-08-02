@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        StatusBarUtil.setColorNoTranslucent(this,resources.getColor(R.color.lightBlue))
+        StatusBarUtil.setColorNoTranslucent(this,resources.getColor(R.color.zhihu_primary))
         btn_login.setOnClickListener { login(tiet_username_login.text.toString(),tiet_password_login.text.toString()) }
         iv_back_login.setOnClickListener { finish() }
     }

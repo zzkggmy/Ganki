@@ -15,7 +15,7 @@
         <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/lightBlue"
+            android:background="@color/zhihu_primary"
             android:fitsSystemWindows="true"
             app:layout_scrollFlags="enterAlwaysCollapsed|scroll">
 
@@ -49,10 +49,9 @@
             android:id="@+id/tl_tree_children"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="10dp"
-            app:tabGravity="center"
+            app:tabGravity="fill"
             android:layout_gravity="fill"
-            app:tabBackground="@color/lightBlue"
+            app:tabBackground="@color/zhihu_primary"
             android:measureAllChildren="true"
             app:tabIndicatorColor="#f44336"
             app:tabMode="scrollable"

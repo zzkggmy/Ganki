@@ -24,7 +24,7 @@ class TreeChildrenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tree_children)
-        StatusBarUtil.setColorNoTranslucent(this, resources.getColor(R.color.lightBlue))
+        StatusBarUtil.setColorNoTranslucent(this, resources.getColor(R.color.zhihu_primary))
         tv_title_tree_children.text = intent.getStringExtra("title")
         iv_back_tree_children.setOnClickListener { finish() }
         tl_tree_children.layoutMode = TabLayout.MODE_SCROLLABLE

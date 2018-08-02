@@ -14,7 +14,7 @@ class ArticleDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_article_detail)
-        StatusBarUtil.setColorNoTranslucent(this, resources.getColor(R.color.lightBlue))
+        StatusBarUtil.setColorNoTranslucent(this, resources.getColor(R.color.zhihu_primary))
         iv_back_article_details.setOnClickListener { finish() }
         QbSdk.initX5Environment(this,null)
         tv_title_article_details.text = intent.getStringExtra("title")

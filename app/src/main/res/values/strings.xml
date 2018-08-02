@@ -9,4 +9,7 @@
     <string name="about">关于</string>
     <string name="app">application</string>
     <string name="sign_in">SIGN IN</string>
+    <string name="hot">热点</string>
+    <string name="main">推荐</string>
+    <string name="login">登录</string>
 </resources>

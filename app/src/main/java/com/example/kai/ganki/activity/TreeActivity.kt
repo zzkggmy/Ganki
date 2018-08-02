@@ -28,7 +28,7 @@ class TreeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tree)
-        StatusBarUtil.setColorNoTranslucent(this, resources.getColor(R.color.lightBlue))
+        StatusBarUtil.setColorNoTranslucent(this, resources.getColor(R.color.zhihu_primary))
         iv_back_tree.setOnClickListener { finish() }
         rv_tree.layoutManager = GridLayoutManager(this@TreeActivity, 3)
         getTree()

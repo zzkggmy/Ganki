@@ -33,6 +33,9 @@
         <activity
             android:name=".activity.ArticleDetailActivity"
             android:label="文章详情" />
+        <activity
+            android:name=".activity.HotActivity"
+            android:label="搜索热点" />
     </application>
 
 </manifest>

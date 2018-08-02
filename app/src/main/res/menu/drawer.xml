@@ -14,10 +14,16 @@
             android:id="@+id/menu_project"
             android:title="@string/project"
             android:icon="@drawable/ic_all_inclusive_red_700_24dp"/>
+
         <item
             android:id="@+id/menu_collection"
             android:title="@string/collection"
             android:icon="@drawable/ic_collections_indigo_500_24dp"/>
+
+        <item
+            android:id="@+id/menu_hot"
+            android:icon="@drawable/ic_whatshot_red_600_24dp"
+            android:title="@string/hot" />
     </group>
 
     <group android:id="@+id/group2">

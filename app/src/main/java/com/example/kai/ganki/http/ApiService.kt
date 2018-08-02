@@ -29,4 +29,8 @@ interface ApiService {
     @GET("article/list/{page}/json")
     fun getTreeArticle(@Path("page") page: Int,@Query("cid") cid: Int): Deferred<TreeArticleBean>
 
+    //获取热词
+    @GET("/hotkey/json")
+    fun getHot(): Deferred<HotBean>
+
 }

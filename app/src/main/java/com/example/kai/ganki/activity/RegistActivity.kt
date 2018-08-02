@@ -16,7 +16,7 @@ class RegistActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_regist)
-        StatusBarUtil.setColorNoTranslucent(this, resources.getColor(R.color.lightBlue))
+        StatusBarUtil.setColorNoTranslucent(this, resources.getColor(R.color.zhihu_primary))
         btn_register.setOnClickListener {
             register()
         }
