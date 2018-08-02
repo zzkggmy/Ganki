@@ -52,5 +52,8 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
     api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.1'
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:0.23.1"
-    compile(name: 'tbsplus_3.6.0.1248_43611', ext: 'aar')
+    api(name: 'tbsplus_3.6.0.1248_43611', ext: 'aar')
+    api 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
 }

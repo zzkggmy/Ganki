@@ -42,8 +42,7 @@ class TreeChildrenFragment : Fragment() {
                 sr_tree_children_frag.isRefreshing = false
                 articleList.addAll(result.data.datas)
                 view.rv_tree_children_frag.adapter = TreeChildrenAdapter(articleList){view, position ->
-//                    startActivity(Intent(activity,ArticleDetailActivity::class.java).putExtra("url",articleList[position].link).putExtra("title",articleList[position].title))
-                    TbsPlus.openUrl(Common.context, articleList[position].link)
+                    startActivity(Intent(activity,ArticleDetailActivity::class.java).putExtra("url",articleList[position].link).putExtra("title",articleList[position].title))
                 }
             }
         }

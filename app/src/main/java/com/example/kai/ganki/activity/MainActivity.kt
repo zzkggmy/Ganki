@@ -10,7 +10,6 @@ import com.example.kai.ganki.R
 import com.example.kai.ganki.adapter.ArticleAdapter
 import com.example.kai.ganki.entity.ArticleBean
 import com.example.kai.ganki.http.Api
-import com.example.kai.ganki.utils.Common
 import com.example.kai.ganki.utils.StatusBarUtil
 import com.example.kai.ganki.utils.Toast.showShortToast
 import com.tencent.smtt.sdk.QbSdk
@@ -18,7 +17,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.navigation_header.view.*
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.async
-import tbsplus.tbs.tencent.com.tbsplus.TbsPlus
 
 class MainActivity : AppCompatActivity() {
     private val articleList: ArrayList<ArticleBean.Data.Datas> = ArrayList()
@@ -57,8 +55,7 @@ class MainActivity : AppCompatActivity() {
                     articleList.addAll(result.data.datas)
                     rv_article.layoutManager = LinearLayoutManager(this@MainActivity)
                     rv_article.adapter = ArticleAdapter(articleList) { view, position ->
-                        //                        startActivity(Intent(this@MainActivity, ArticleDetailActivity::class.java).putExtra("url", articleList[position].link).putExtra("title", articleList[position].title))
-                        TbsPlus.openUrl(Common.context, articleList[position].link)
+                                                startActivity(Intent(this@MainActivity, ArticleDetailActivity::class.java).putExtra("url", articleList[position].link).putExtra("title", articleList[position].title))
                     }
                 } else {
                     Toast.makeText(this@MainActivity, "获取资料失败", Toast.LENGTH_SHORT).show()

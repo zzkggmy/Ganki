@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.example.kai.ganki.R
 import com.example.kai.ganki.http.Api
+import com.example.kai.ganki.http.RetrofitHelper
 import com.example.kai.ganki.utils.StatusBarUtil
 import com.example.kai.ganki.utils.Toast
 import com.example.kai.ganki.utils.Toast.showShortToast
